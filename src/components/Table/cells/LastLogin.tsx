@@ -1,4 +1,3 @@
-import userX from "@assets/user-x-2.svg";
 import pencil from "@assets/pencil.svg";
 import more from "@assets/more-horizontal.svg";
 
@@ -7,6 +6,7 @@ import { Popover } from "@ark-ui/react";
 
 import type { User } from "@/lib/user";
 import { css, cva } from "@styled-system/css";
+import { UserX } from "@/assets/UserX";
 
 const dropdownButton = cva({
   base: {
@@ -17,6 +17,7 @@ const dropdownButton = cva({
     paddingY: "2",
     borderColor: "borders.primary",
     cursor: "pointer",
+    alignItems: "center",
   },
   variants: {
     visual: {
@@ -39,6 +40,7 @@ function LastLogin({ user }: UserProps) {
       <div
         className={css({
           color: "text.third",
+          fontSize: "sm",
         })}
       >
         {format(fromUnixTime(user.last_login), "dd/MM/yyyy - HH:ss")}
@@ -62,8 +64,7 @@ function LastLogin({ user }: UserProps) {
               Edit user
             </Popover.Description>
             <Popover.Description className={dropdownButton({ visual: "red" })}>
-              <img src={userX} alt="user x" />
-              Deactivate user
+              <UserX /> Deactivate user
             </Popover.Description>
           </Popover.Content>
         </Popover.Positioner>

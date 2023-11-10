@@ -35,7 +35,7 @@ function Header({ columns }: HeaderProps) {
                 width: "48",
                 paddingRight: "5",
                 borderRightWidth: 1,
-                borderTopRadius: "md",
+                borderTopRightRadius: "md",
               },
             })}
           >

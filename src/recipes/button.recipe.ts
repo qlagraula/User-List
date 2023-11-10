@@ -6,12 +6,11 @@ export const buttonRecipe = defineRecipe({
   base: {
     display: "flex",
     alignItems: "center",
-    gap: "1",
-    paddingX: "4",
+    gap: "2",
+    padding: "1.5",
     borderWidth: 1,
     borderRadius: "md",
     fontSize: "xs",
-    cursor: "pointer",
   },
   variants: {
     visual: {
@@ -22,8 +21,18 @@ export const buttonRecipe = defineRecipe({
         color: "surface.primary",
       },
     },
+    cursor: {
+      pointer: { cursor: "pointer" },
+      default: { cursor: "default" },
+    },
+    size: {
+      fluid: { width: "full", justifyContent: "center" },
+      default: {},
+    },
   },
   defaultVariants: {
     visual: "primary",
+    size: "default",
+    cursor: "pointer",
   },
 });

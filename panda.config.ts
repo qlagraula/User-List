@@ -24,6 +24,7 @@ export default defineConfig({
           main: { value: "#1C4A47" },
           secondary: { value: "#ED7846" },
           lightMain: { value: "#E8EDEA" },
+          lightSecondary: { value: "#FEE8DF" },
           borders: {
             primary: { value: "#E4E4E7" },
             secondary: { value: "#EF8559" },
@@ -43,6 +44,7 @@ export default defineConfig({
           paginationItem: { value: "32px" },
           tableRow: { value: "60px" },
           tableHeader: { value: "40px" },
+          dropdownSeperator: { value: "16px" },
           groupIcon: { value: "12px" },
         },
         shadows: {

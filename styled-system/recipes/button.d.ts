@@ -4,6 +4,8 @@ import type { DistributiveOmit, Pretty } from '../types/system-types';
 
 interface ButtonVariant {
   visual: "primary" | "secondary"
+cursor: "pointer" | "default"
+size: "fluid" | "default"
 }
 
 type ButtonVariantMap = {

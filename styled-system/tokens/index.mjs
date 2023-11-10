@@ -1375,6 +1375,10 @@ const tokens = {
     "value": "#E8EDEA",
     "variable": "var(--colors-light-main)"
   },
+  "colors.lightSecondary": {
+    "value": "#FEE8DF",
+    "variable": "var(--colors-light-secondary)"
+  },
   "colors.borders.primary": {
     "value": "#E4E4E7",
     "variable": "var(--colors-borders-primary)"
@@ -1622,6 +1626,10 @@ const tokens = {
   "sizes.tableHeader": {
     "value": "40px",
     "variable": "var(--sizes-table-header)"
+  },
+  "sizes.dropdownSeperator": {
+    "value": "16px",
+    "variable": "var(--sizes-dropdown-seperator)"
   },
   "sizes.groupIcon": {
     "value": "12px",

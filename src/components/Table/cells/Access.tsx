@@ -23,6 +23,7 @@ function Access({ user }: UserProps) {
                 textDecorationThickness: "1px",
                 textUnderlineOffset: "6px",
                 cursor: "pointer",
+                fontSize: "sm",
               })}
             >
               On {user.access?.length} products

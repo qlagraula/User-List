@@ -2,13 +2,23 @@ import { splitProps } from '../helpers.mjs';
 import { createRecipe, mergeRecipes } from './create-recipe.mjs';
 
 const buttonFn = /* @__PURE__ */ createRecipe('button', {
-  "visual": "primary"
+  "visual": "primary",
+  "size": "default",
+  "cursor": "pointer"
 }, [])
 
 const buttonVariantMap = {
   "visual": [
     "primary",
     "secondary"
+  ],
+  "cursor": [
+    "pointer",
+    "default"
+  ],
+  "size": [
+    "fluid",
+    "default"
   ]
 }
 

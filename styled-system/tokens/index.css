@@ -343,6 +343,7 @@
   --colors-main: #1C4A47;
   --colors-secondary: #ED7846;
   --colors-light-main: #E8EDEA;
+  --colors-light-secondary: #FEE8DF;
   --colors-borders-primary: #E4E4E7;
   --colors-borders-secondary: #EF8559;
   --colors-surface-primary: #FFFFFF;
@@ -405,6 +406,7 @@
   --sizes-pagination-item: 32px;
   --sizes-table-row: 60px;
   --sizes-table-header: 40px;
+  --sizes-dropdown-seperator: 16px;
   --sizes-group-icon: 12px;
   --sizes-breakpoint-sm: 640px;
   --sizes-breakpoint-md: 768px;
