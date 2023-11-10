@@ -1,4 +1,6 @@
 import { defineConfig } from "@pandacss/dev";
+import { buttonRecipe } from "./src/recipes/button.recipe";
+import { tooltipRecipe } from "./src/recipes/tooltip.recipe";
 
 export default defineConfig({
   // Whether to use css reset
@@ -14,16 +16,43 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    tokens: {
-      colors: {
-        main: { value: "#1C4A47" },
-        borders: {
-          primary: { value: "#E4E4E7" },
+    extend: {
+      tokens: {
+        colors: {
+          "gray-100": { value: "#F3F3F3" },
+          red: { value: "#E45B52" },
+          main: { value: "#1C4A47" },
+          secondary: { value: "#ED7846" },
+          lightMain: { value: "#E8EDEA" },
+          borders: {
+            primary: { value: "#E4E4E7" },
+            secondary: { value: "#EF8559" },
+          },
+          surface: {
+            primary: { value: "#FFFFFF" },
+            secondary: { value: "#FAFAFB" },
+          },
+          text: {
+            primary: { value: "#24292F" },
+            secondary: { value: "#667085" },
+            third: { value: "#B2B7C2" },
+          },
+        },
+        sizes: {
+          topBar: { value: "60px" },
+          paginationItem: { value: "32px" },
+          tableRow: { value: "60px" },
+          tableHeader: { value: "40px" },
+          groupIcon: { value: "12px" },
+        },
+        shadows: {
+          main: {
+            value:
+              "0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03)",
+          },
         },
       },
-      sizes: {
-        topBar: { value: "60px" },
-      },
+      recipes: { button: buttonRecipe, tooltip: tooltipRecipe },
     },
   },
 

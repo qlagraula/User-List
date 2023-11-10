@@ -1,13 +1,9 @@
 /* eslint-disable */
-import type { CompositionStyleObject } from './system-types'
+import type {  CompositionStyleObject  } from './system-types';
+import type {  Token  } from '../tokens';
 
-type Recursive<T> = {
+interface Recursive<T> {
   [key: string]: Recursive<T> | T
-}
-
-export type Token<Value = any> = {
-  value: Value
-  description?: string
 }
 
 /* -----------------------------------------------------------------------------
@@ -105,7 +101,7 @@ export type LayerStyle = CompositionStyleObject<LayerStyleProperty>
 
 export type LayerStyles = Recursive<Token<LayerStyle>>
 
-export type CompositionStyles = {
+export interface CompositionStyles {
   textStyles: TextStyles
   layerStyles: LayerStyles
 }
